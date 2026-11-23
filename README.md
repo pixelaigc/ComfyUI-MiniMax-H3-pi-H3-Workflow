@@ -60,7 +60,20 @@ git clone https://github.com/pixelaigc/ComfyUI-MiniMax-H3-pi-H3-Workflow.git
 3. 如果出现缺失节点，使用 ComfyUI Manager 安装缺失的自定义节点，然后重启 ComfyUI。
 4. 按下方目录放置模型文件，并刷新模型列表。
 
-### 3. 下载模型
+### 3. 安装必需节点
+
+本工作流需要安装 **[ComfyUI-piFlow](https://github.com/Lakonik/ComfyUI-piFlow)**。
+
+推荐通过 ComfyUI Manager 搜索 `ComfyUI-piFlow` 并安装；也可以进入 ComfyUI 的 `custom_nodes` 目录手动安装：
+
+```bash
+cd ComfyUI/custom_nodes
+git clone https://github.com/Lakonik/ComfyUI-piFlow.git
+```
+
+安装完成后请重启 ComfyUI。如果导入工作流后仍有红色节点，再通过 ComfyUI Manager 安装提示的其他缺失节点。
+
+### 4. 下载模型
 
 | 类型 | 模型 | 保存位置 |
 |---|---|---|
